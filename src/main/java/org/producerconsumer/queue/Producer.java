@@ -1,7 +1,7 @@
-package org.example.queue;
+package org.producerconsumer.queue;
 
-import org.example.command.Command;
-import org.example.domain.User;
+import org.producerconsumer.command.Command;
+import org.producerconsumer.domain.User;
 
 import java.util.LinkedList;
 import java.util.concurrent.CountDownLatch;

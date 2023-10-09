@@ -1,8 +1,8 @@
-package org.example.queue;
+package org.producerconsumer.queue;
 
-import org.example.command.Command;
-import org.example.domain.User;
-import org.example.repository.Repository;
+import org.producerconsumer.command.Command;
+import org.producerconsumer.domain.User;
+import org.producerconsumer.repository.Repository;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

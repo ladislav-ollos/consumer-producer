@@ -1,4 +1,4 @@
-package org.example.domain;
+package org.producerconsumer.domain;
 import jakarta.persistence.*;
 
 import java.util.Objects;

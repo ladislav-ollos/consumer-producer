@@ -1,4 +1,4 @@
-package org.example;
+package org.producerconsumer;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

@@ -1,4 +1,4 @@
-package org.example.queue;
+package org.producerconsumer.queue;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

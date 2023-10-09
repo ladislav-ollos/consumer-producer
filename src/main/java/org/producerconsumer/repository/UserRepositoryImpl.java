@@ -1,7 +1,7 @@
-package org.example.repository;
+package org.producerconsumer.repository;
 
-import org.example.HibernateUtil;
-import org.example.domain.User;
+import org.producerconsumer.HibernateUtil;
+import org.producerconsumer.domain.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

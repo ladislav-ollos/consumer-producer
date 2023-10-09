@@ -1,4 +1,4 @@
-package org.example.queue;
+package org.producerconsumer.queue;
 
 import org.junit.jupiter.api.Assertions;
 

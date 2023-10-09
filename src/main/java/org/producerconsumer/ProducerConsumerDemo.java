@@ -1,24 +1,23 @@
-package org.example;
+package org.producerconsumer;
 
-import org.example.command.Command;
-import org.example.command.CreateUserCommand;
-import org.example.command.DeleteAllUsersCommand;
-import org.example.command.PrintAllUsersCommand;
-import org.example.queue.Consumer;
-import org.example.queue.FifoQueue;
-import org.example.queue.Producer;
-import org.example.repository.Repository;
-import org.example.domain.User;
-import org.example.repository.UserRepositoryImpl;
+import org.producerconsumer.command.Command;
+import org.producerconsumer.command.CreateUserCommand;
+import org.producerconsumer.command.DeleteAllUsersCommand;
+import org.producerconsumer.command.PrintAllUsersCommand;
+import org.producerconsumer.queue.Consumer;
+import org.producerconsumer.queue.FifoQueue;
+import org.producerconsumer.queue.Producer;
+import org.producerconsumer.repository.Repository;
+import org.producerconsumer.domain.User;
+import org.producerconsumer.repository.UserRepositoryImpl;
 
 import java.util.LinkedList;
-import java.util.List;
 import java.util.concurrent.*;
 
 public class ProducerConsumerDemo
 {
-    private final List<Consumer> consumers = new LinkedList<>();
-    private final List<Producer> producers = new LinkedList<>();
+    private final Consumer consumer;
+    private final Producer producer;
 
     private final ExecutorService executorService = Executors.newFixedThreadPool(4);
 
@@ -35,18 +34,13 @@ public class ProducerConsumerDemo
         Repository<User> userRepository = new UserRepositoryImpl();
         producerCountDownLatch = new CountDownLatch(1);
         FifoQueue<Command<User>> queue = new FifoQueue<>();
-        producers.add(new Producer(queue, commands, producerCountDownLatch));
-        consumers.add(new Consumer(queue, userRepository));
-        //
+        producer = new Producer(queue, commands, producerCountDownLatch);
+        consumer = new Consumer(queue, userRepository);
     }
 
     public void start() {
-        for (Producer p : producers) {
-            executorService.submit(p);
-        }
-        for (Consumer c : consumers) {
-            executorService.submit(c);
-        }
+        executorService.submit(producer);
+        executorService.submit(consumer);
     }
 
     public void process() {
@@ -61,7 +55,7 @@ public class ProducerConsumerDemo
         // at this point there is no more input coming
         // we terminate consumers
         System.out.println("Now we can finish consuming.");
-        consumers.forEach(Consumer::terminate);
+        consumer.terminate();
     }
 
     public void end() {

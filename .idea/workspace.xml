@@ -4,28 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55100b0f-37a9-4bc0-b25c-9d36b3a14a6c" name="Changes" comment="program in Java language that will process commands from FIFO queue using Producer – Consumer pattern&#10;&#10;Supported commands are the following:&#10;Add  - adds a user into a database&#10;PrintAll – prints all users into standard output&#10;DeleteAll – deletes all users from database">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ProducerConsumerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/CreateUserCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/DeleteAllUsersCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/PrintAllUsersCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/FifoQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/queue/FifoQueueTest.java" afterDir="false" />
+    <list default="true" id="55100b0f-37a9-4bc0-b25c-9d36b3a14a6c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProducerConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/ProducerConsumerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/CreateUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/command/CreateUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/DeleteAllUsersCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/command/DeleteAllUsersCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/PrintAllUsersCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/command/PrintAllUsersCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/queue/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/queue/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/queue/FifoQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/queue/FifoQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/queue/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/queue/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/producerconsumer/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/queue/FifoQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/producerconsumer/queue/FifoQueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +37,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -69,11 +68,11 @@
   </component>
   <component name="RunManager" selected="Application.ProducerConsumerDemo">
     <configuration name="ProducerConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.ProducerConsumerDemo" />
-      <module name="IndraAvitech" />
+      <option name="MAIN_CLASS_NAME" value="org.producerconsumer.ProducerConsumerDemo" />
+      <module name="ProducerConsumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.producerconsumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,15 +81,15 @@
       </method>
     </configuration>
     <configuration name="FifoQueueTest.testDoesNotExceedCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IndraAvitech" />
+      <module name="ProducerConsumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.queue.*" />
+          <option name="PATTERN" value="org.producerconsumer.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.queue" />
-      <option name="MAIN_CLASS_NAME" value="org.example.queue.FifoQueueTest" />
+      <option name="MAIN_CLASS_NAME" value="org.producerconsumer.queue.FifoQueueTest" />
       <option name="METHOD_NAME" value="testDoesNotExceedCapacity" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -98,10 +97,10 @@
       </method>
     </configuration>
     <configuration name="FifoQueueTwTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IndraAvitech" />
+      <module name="ProducerConsumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.queue.*" />
+          <option name="PATTERN" value="org.producerconsumer.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,10 +112,10 @@
       </method>
     </configuration>
     <configuration name="FifoQueueTwTest.startTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IndraAvitech" />
+      <module name="ProducerConsumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.queue.*" />
+          <option name="PATTERN" value="org.producerconsumer.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,8 +127,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ProducerConsumer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ProducerConsumer" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FifoQueueJCStressTest" type="jcstress-id" temporary="true" programParameters="-t org.example.queue.FifoQueueJCStressTest -v" workingDirectory="$MODULE_WORKING_DIR$" jcstressClass="org.example.queue.FifoQueueJCStressTest">
-      <module name="IndraAvitech" />
+      <module name="ProducerConsumer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,6 +165,15 @@
       <option name="presentableId" value="Default" />
       <updated>1696831085933</updated>
     </task>
+    <task id="LOCAL-00001" summary="program in Java language that will process commands from FIFO queue using Producer – Consumer pattern&#10;&#10;Supported commands are the following:&#10;Add  - adds a user into a database&#10;PrintAll – prints all users into standard output&#10;DeleteAll – deletes all users from database">
+      <option name="closed" value="true" />
+      <created>1696865473151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696865473151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

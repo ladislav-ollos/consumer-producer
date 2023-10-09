@@ -1,7 +1,7 @@
-package org.example.command;
+package org.producerconsumer.command;
 
-import org.example.domain.User;
-import org.example.repository.Repository;
+import org.producerconsumer.domain.User;
+import org.producerconsumer.repository.Repository;
 
 import java.util.List;
 

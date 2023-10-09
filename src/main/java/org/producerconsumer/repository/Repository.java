@@ -1,4 +1,4 @@
-package org.example.repository;
+package org.producerconsumer.repository;
 
 
 import java.util.List;
