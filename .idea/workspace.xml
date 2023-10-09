@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55100b0f-37a9-4bc0-b25c-9d36b3a14a6c" name="Changes" comment="program in Java language that will process commands from FIFO queue using Producer – Consumer pattern&#10;&#10;Supported commands are the following:&#10;Add  - adds a user into a database&#10;PrintAll – prints all users into standard output&#10;DeleteAll – deletes all users from database">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ProducerConsumerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/CreateUserCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/DeleteAllUsersCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/PrintAllUsersCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/FifoQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/queue/FifoQueueTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2WVwW1JYajb3UMR0vBbJ6M1PmRf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.queue" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ProducerConsumerDemo">
+    <configuration name="ProducerConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ProducerConsumerDemo" />
+      <module name="IndraAvitech" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FifoQueueTest.testDoesNotExceedCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IndraAvitech" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.queue" />
+      <option name="MAIN_CLASS_NAME" value="org.example.queue.FifoQueueTest" />
+      <option name="METHOD_NAME" value="testDoesNotExceedCapacity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FifoQueueTwTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IndraAvitech" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.queue" />
+      <option name="MAIN_CLASS_NAME" value="org.example.queue.FifoQueueTwTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FifoQueueTwTest.startTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IndraAvitech" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.queue" />
+      <option name="MAIN_CLASS_NAME" value="org.example.queue.FifoQueueTwTest" />
+      <option name="METHOD_NAME" value="startTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FifoQueueJCStressTest" type="jcstress-id" temporary="true" programParameters="-t org.example.queue.FifoQueueJCStressTest -v" workingDirectory="$MODULE_WORKING_DIR$" jcstressClass="org.example.queue.FifoQueueJCStressTest">
+      <module name="IndraAvitech" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProducerConsumerDemo" />
+        <item itemvalue="JUnit.FifoQueueTwTest.startTest" />
+        <item itemvalue="JUnit.FifoQueueTwTest" />
+        <item itemvalue="JCStress.FifoQueueJCStressTest" />
+        <item itemvalue="JUnit.FifoQueueTest.testDoesNotExceedCapacity" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55100b0f-37a9-4bc0-b25c-9d36b3a14a6c" name="Changes" comment="" />
+      <created>1696831085933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696831085933</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="program in Java language that will process commands from FIFO queue using Producer – Consumer pattern&#10;&#10;Supported commands are the following:&#10;Add  - adds a user into a database&#10;PrintAll – prints all users into standard output&#10;DeleteAll – deletes all users from database" />
+    <option name="LAST_COMMIT_MESSAGE" value="program in Java language that will process commands from FIFO queue using Producer – Consumer pattern&#10;&#10;Supported commands are the following:&#10;Add  - adds a user into a database&#10;PrintAll – prints all users into standard output&#10;DeleteAll – deletes all users from database" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
